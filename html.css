@@ -1,0 +1,12 @@
+
+#we{
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    border: 10px groove black;
+    padding:12px;
+    margin: 7px;
+    text-decoration: underline;
+    text-shadow:  1px 1px 3px  red;
+     
+} 
