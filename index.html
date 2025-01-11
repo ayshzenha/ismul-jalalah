@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ismul jalalh</title>
-    
-    <link rel="stylesheet"type="text/css" href="html.css">
-
+    <title>Ayatul Kursiy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<body>
+    <!-- Main Wrapper -->
+    <div class="container">
+        <header>
+            <h1>Ayatul Kursiy</h1>
+        </header>
 
-<body id="we">
+        <!-- Image Section -->
+        <section class="media-section">
+            <img src="kursi.jpg" alt="Ayatul Kursiy Image" class="responsive-image">
+        </section>
 
-    
-    <h1  ><center>Ayatul Kursiy</center></h1>
-    <br><br>
-    <center> <img src="kursi.jpg" width="500px" height="500 px" >
-    </center>
-    <br><br>
-    <center>
-        <audio controls="">
-<source src="recit.m4a"
-        </audio>
-    </center>
-    <br><br>
-    <center>
-        <video controls="">
-          <source src="recitation.mp4"  width=""
-        </video>
-    </center>
+        <!-- Audio Section -->
+        <section class="audio-section">
+            <h2>Listen to Recitation</h2>
+            <audio controls>
+                <source src="recit.m4a" type="audio/m4a">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-    
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>Watch Recitation</h2>
+            <video controls class="responsive-video">
+                <source src="recitation.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 All Rights Reserved. Designed by Your Name</p>
+        </footer>
+    </div>
 </body>
 </html>
