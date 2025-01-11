@@ -1,45 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayatul Kursiy</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Main Wrapper -->
-    <div class="container">
-        <header>
-            <h1>Ayatul Kursiy</h1>
-        </header>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
-        <!-- Image Section -->
-        <section class="media-section">
-            <img src="kursi.jpg" alt="Ayatul Kursiy Image" class="fixed-image">
-        </section>
+/* Body and Background */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
 
-        <!-- Audio Section -->
-        <section class="audio-section">
-            <h2>Listen to Recitation</h2>
-            <audio controls>
-                <source src="recit.m4a" type="audio/m4a">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
+/* Main Container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-        <!-- Video Section -->
-        <section class="video-section">
-            <h2>Watch Recitation</h2>
-            <video controls class="fixed-video">
-                <source src="recitation.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
-        </section>
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
 
-        <footer>
-            <p>&copy; 2025 All Rights Reserved. Designed by Your Name</p>
-        </footer>
-    </div>
-</body>
-</html>
+/* Image Section */
+.media-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Audio Section */
+.audio-section h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Video Section */
+.video-section h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Responsive Media */
+.fixed-video {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .fixed-image {
+        width: 100%;
+        height: auto;
+        max-width: 500px; /* Ensures image does not stretch too much */
+    }
+
+    .fixed-video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
