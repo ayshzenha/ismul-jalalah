@@ -30,6 +30,10 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Header */
@@ -43,6 +47,9 @@ header h1 {
 /* Image Section */
 .media-section {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fixed-image {
@@ -100,11 +107,13 @@ footer p {
     .fixed-image {
         width: 100%;
         height: auto;
+        max-width: 500px; /* Ensures image does not stretch too much */
     }
 
     .fixed-video {
         width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
     footer p {
